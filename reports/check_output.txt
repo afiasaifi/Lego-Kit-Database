@@ -1,0 +1,153 @@
+﻿=== themes.csv ===
+  rows: 614 | columns: ['id', 'name', 'parent_id']
+  file size: 0.01 MB
+  [ISSUE] missing values in 'parent_id': 111
+       [id=1] parent_id= (blank)
+       [id=22] parent_id= (blank)
+       [id=50] parent_id= (blank)
+       [id=112] parent_id= (blank)
+       [id=126] parent_id= (blank)
+       [id=147] parent_id= (blank)
+       [id=155] parent_id= (blank)
+       [id=158] parent_id= (blank)
+       [id=186] parent_id= (blank)
+       [id=204] parent_id= (blank)
+       [id=206] parent_id= (blank)
+       [id=233] parent_id= (blank)
+       [id=246] parent_id= (blank)
+       [id=252] parent_id= (blank)
+       [id=254] parent_id= (blank)
+       ... and 96 more rows
+  [OK] no duplicate rows
+  [OK] no duplicate primary key (['id'])
+  [ISSUE] stray whitespace in 'name': 1
+       [id=457] name='Western\xa0' (whitespace)
+  [OK] no orphans on parent_id -> themes.id
+
+=== colors.csv ===
+  rows: 135 | columns: ['id', 'name', 'rgb', 'is_trans']
+  file size: 0.00 MB
+  [OK] no missing values
+  [OK] no duplicate rows
+  [OK] no duplicate primary key (['id'])
+  [OK] no whitespace issues
+  is_trans values: ['f', 't']
+  bad rgb codes: 0
+
+=== part_categories.csv ===
+  rows: 57 | columns: ['id', 'name']
+  file size: 0.00 MB
+  [OK] no missing values
+  [OK] no duplicate rows
+  [OK] no duplicate primary key (['id'])
+  [OK] no whitespace issues
+
+=== parts.csv ===
+  rows: 25,993 | columns: ['part_num', 'name', 'part_cat_id']
+  file size: 1.79 MB
+  [OK] no missing values
+  [OK] no duplicate rows
+  [OK] no duplicate primary key (['part_num'])
+  [ISSUE] stray whitespace in 'name': 161
+       [part_num=11294] name='Hero Factory Mask (Aquagon) ' (whitespace)
+       [part_num=13361pr0005] name='Minifig Mask Gorilla with Gray Face and Light Yellow Face Paint, Closed Mouth Print ' (whitespace)
+       [part_num=14306] name='Cloth Sail Triangular 18 x 34 with Winged Edge and Dark Brown Print ' (whitespace)
+       [part_num=15065pr0001] name='Minifig Mask Bat with Fangs and Purple Nose Print ' (whitespace)
+       [part_num=15086] name='Minifig Armor Shoulder Pads Elaborate with Raised Neck, Front Stud and 2 Back Studs ' (whitespace)
+       [part_num=15090] name='Paw with Stud on Top, Bar on Side and 3 Bar Holders on Bottom ' (whitespace)
+       [part_num=15091] name='Rock Panel 2 x 4 x 3 with Fractures (Chima Icecage) ' (whitespace)
+       [part_num=15094pr0002] name='Fly Wheel Fairing Large Cat Streamlined Shape with Sir Fangar Print (70156) ' (whitespace)
+       [part_num=15373pr01] name='Large Figure Head Modified Chima Saber-toothed Cat Upper Jaw with Fangs with Red Eyes Print ' (whitespace)
+       [part_num=15391c02] name='Gun, Blaster / Shooter Mini with Reddish Brown Trigger - Complete Assembly ' (whitespace)
+       [part_num=15406] name='Minifig Backpack with Horizontal Pin Hole ' (whitespace)
+       [part_num=15424pr0001] name='Minifig Hat, Cowboy with Gold Star Print ' (whitespace)
+       [part_num=15429pr0002] name='Cat Tail with Bright Light Orange Flames Print ' (whitespace)
+       [part_num=15439] name='Minifig Moustache ' (whitespace)
+       [part_num=15442] name='Minifig Beard, Long with Knot ' (whitespace)
+       ... and 146 more rows
+  [OK] no orphans on part_cat_id -> part_categories.id
+
+=== sets.csv ===
+  rows: 11,673 | columns: ['set_num', 'name', 'year', 'theme_id', 'num_parts']
+  file size: 0.51 MB
+  [OK] no missing values
+  [OK] no duplicate rows
+  [OK] no duplicate primary key (['set_num'])
+  [ISSUE] stray whitespace in 'name': 15
+       [set_num=30226-1] name='Police Helicopter ' (whitespace)
+       [set_num=30262-1] name="Gorzan's Walker " (whitespace)
+       [set_num=3573-1] name='Superstar Figure ' (whitespace)
+       [set_num=41101-1] name='Heartlake Grand Hotel ' (whitespace)
+       [set_num=5002919-1] name=' Scenery and Dagger Trap polybag' (whitespace)
+       [set_num=5003565-1] name=' 1 stud Blue Storage Brick' (whitespace)
+       [set_num=71010-7] name=' Spectre' (whitespace)
+       [set_num=71214-1] name='LEGO┬« DIMENSIONSΓäó Benny Fun Pack ' (whitespace)
+       [set_num=75056-15] name='Advent Calendar 2014 Star Wars (Day 14) - Moisture Vaporator ' (whitespace)
+       [set_num=75056-9] name='Advent Calendar 2014 Star Wars (Day 8) - Snowtrooper ' (whitespace)
+       [set_num=76071-1] name='Mighty Micros: Spider-Man vs. Scorpion ' (whitespace)
+       [set_num=852815-1] name=' White Spaceman Key Chain' (whitespace)
+       [set_num=853344-1] name='Holiday Ornament with Red Bricks ' (whitespace)
+       [set_num=853439-1] name='Upscaled Mug ' (whitespace)
+       [set_num=SW911607-1] name='Millennium Falcon ' (whitespace)
+  [OK] no orphans on theme_id -> themes.id
+  year range: 1950 - 2017 | non-numeric: 0
+  sets with num_parts = 0: 473 (not an error, just a mismatch)
+
+=== inventories.csv ===
+  rows: 11,681 | columns: ['id', 'version', 'set_num']
+  file size: 0.17 MB
+  [OK] no missing values
+  [OK] no duplicate rows
+  [OK] no duplicate primary key (['id'])
+  [OK] no whitespace issues
+  [OK] no orphans on set_num -> sets.set_num
+
+=== inventory_parts.csv ===
+  rows: 580,251 | columns: ['inventory_id', 'part_num', 'color_id', 'quantity', 'is_spare']
+  file size: 10.44 MB
+  [OK] no missing values
+  [OK] no duplicate rows
+  [OK] no duplicate primary key (['inventory_id', 'part_num', 'color_id', 'is_spare'])
+  [OK] no whitespace issues
+  [OK] no orphans on inventory_id -> inventories.id
+  [ISSUE] orphans on part_num -> parts.part_num: 182
+    -> 17 distinct missing part_num values:
+       rb00164: 73 rows
+       2476: 20 rows
+       48002: 17 rows
+       3650: 16 rows
+       3010pb036u: 12 rows
+       70973c01: 12 rows
+       4285: 9 rows
+       6932: 8 rows
+       7049: 5 rows
+       52345: 3 rows
+       2495c01: 1 rows
+       4738ac01: 1 rows
+       19807: 1 rows
+       60364pr0003: 1 rows
+       92355: 1 rows
+       3680c02: 1 rows
+       4502w: 1 rows
+  [OK] no orphans on color_id -> colors.id
+  quantity <= 0: 0
+  is_spare values: ['f', 't']
+
+=== inventory_sets.csv ===
+  rows: 2,846 | columns: ['inventory_id', 'set_num', 'quantity']
+  file size: 0.04 MB
+  [OK] no missing values
+  [OK] no duplicate rows
+  [OK] no duplicate primary key (['inventory_id', 'set_num'])
+  [OK] no whitespace issues
+  [OK] no orphans on inventory_id -> inventories.id
+  [OK] no orphans on set_num -> sets.set_num
+
+=== cross-table check: sets.num_parts vs. actual inventory ===
+  sets where num_parts != summed inventory: 539 (not an error, just a mismatch)
+
+=== SUMMARY: files needing cleanup ===
+  [NEEDS CLEANUP] inventory_parts.csv
+  [NEEDS CLEANUP] parts.csv
+  [NEEDS CLEANUP] sets.csv
+  [NEEDS CLEANUP] themes.csv
