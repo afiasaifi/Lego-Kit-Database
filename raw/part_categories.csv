@@ -1,6 +1,5 @@
 id,name
 1,Baseplates
-2,Bricks Printed
 3,Bricks Sloped
 4,"Duplo, Quatro and Primo"
 5,Bricks Special
@@ -8,25 +7,24 @@ id,name
 7,Containers
 8,Technic Bricks
 9,Plates Special
-10,Tiles Printed
 11,Bricks
 12,Technic Connectors
 13,Minifigs
 14,Plates
 15,Tiles Special
 16,Windows and Doors
-17,Non-LEGO
+17,Gear Parts
 18,"Hinges, Arms and Turntables"
 19,Tiles
 20,Bricks Round and Cones
-21,Plates Round and Dishes
+21,Plates Round Curved and Dishes
 22,Pneumatics
 23,Panels
 24,Other
 25,"Technic Steering, Suspension and Engine"
 26,Technic Special
 27,Minifig Accessories
-28,Plants and Animals
+28,Animals / Creatures
 29,Wheels and Tyres
 30,Tubes and Hoses
 31,"String, Bands and Reels"
@@ -36,18 +34,18 @@ id,name
 35,Transportation - Sea and Air
 36,Transportation - Land
 37,Bricks Curved
-38,"Flags, Signs, Plastics and Cloth"
+38,"Flags, Banners and Signs"
 39,Magnets and Holders
 40,Technic Panels
-41,"Bionicle, Hero Factory and Constraction"
+41,Large Buildable Figures
 42,"Belville, Scala and Fabuland"
 43,Znap
 44,Mechanical
-45,"Power Functions, Mindstorms and Electric"
+45,Electronics
 46,Technic Axles
 47,Windscreens and Fuselage
 48,Clikits
-49,Plates Angled
+49,Plates Wedged
 50,HO Scale
 51,Technic Beams
 52,Technic Gears
@@ -56,3 +54,24 @@ id,name
 55,Technic Beams Special
 56,Tools
 57,"Non-Buildable Figures (Duplo, Fabuland, etc)"
+58,Stickers
+59,Minifig Heads
+60,Minifig Upper Body
+61,Minifig Lower Body
+62,Minidoll Heads
+63,Minidoll Upper Body
+64,Minidoll Lower Body
+65,Minifig Headwear
+66,Modulex
+67,Tiles Round and Curved
+68,Projectiles / Launchers
+69,Energy Effects
+70,Minifig Hipwear
+71,Minifig Neckwear
+72,Minifig Headwear Accessories
+73,"Minifig Shields, Weapons, & Tools"
+74,Animal / Creature Accessories
+75,Animal / Creature Body Parts
+76,Plants & Trees
+77,Non-System Parts
+78,Pen & Watch
